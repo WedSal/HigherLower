@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/WelcometextView"
+        android:layout_width="354dp"
+        android:layout_height="69dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to the game!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/Playbutton"
+        android:layout_width="294dp"
+        android:layout_height="74dp"
+        android:background="#EBEFF1"
+        android:backgroundTint="#0878D1"
+
+        android:text="Click to play!"
+        android:textColor="#00070B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcometextView"
+        app:layout_constraintVertical_bias="0.8"
+        app:rippleColor="#E9ECEF" />
+
+    <ImageView
+        android:id="@+id/HigherimageView"
+        android:layout_width="347dp"
+        android:layout_height="378dp"
+        app:layout_constraintBottom_toTopOf="@+id/Playbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcometextView"
+        app:layout_constraintVertical_bias="0.383"
+        app:srcCompat="@drawable/higher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
